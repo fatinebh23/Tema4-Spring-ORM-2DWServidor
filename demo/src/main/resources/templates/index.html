@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mi primer ejemplo con Spring</title>
+    <style>
+        html {
+            font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
+            color: #404040;
+            background-color: #d3d3d3;
+        }
+        body {
+            padding: 5em;
+        }
+    </style>
+</head>
+<body>
+<h1>¡Hola! ¡Este es mi primer ejemplo con Spring!</h1>
+<p>Esta página ha sido servida a las <span th:text="${#temporals.format(hora, 'HH:mm')}"></span></p>
+</body>
+</html>
