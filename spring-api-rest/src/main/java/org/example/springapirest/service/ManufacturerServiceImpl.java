@@ -51,4 +51,9 @@ public class ManufacturerServiceImpl implements ManufacturerService {
     public void deleteAll() {
 
     }
+
+    @Override
+    public List<Manufacturer> findAllByYear(Integer year) {
+        return null;
+    }
 }

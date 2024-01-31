@@ -24,6 +24,8 @@ public interface ManufacturerService {
     void deleteById(Long id);
     void deleteAll();
 
+    List<Manufacturer> findAllByYear(Integer year);
+
     //Mas logica de negocio
 
     //1.Coches fabricados
