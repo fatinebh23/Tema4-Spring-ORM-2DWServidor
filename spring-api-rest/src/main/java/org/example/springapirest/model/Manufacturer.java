@@ -12,7 +12,7 @@ public class Manufacturer {
     private String name;
     @Column(name="num_employees")
     private Integer numEmployees;
-
+    @Column(name="init_year")
     private Integer year;
 
     public Manufacturer() {

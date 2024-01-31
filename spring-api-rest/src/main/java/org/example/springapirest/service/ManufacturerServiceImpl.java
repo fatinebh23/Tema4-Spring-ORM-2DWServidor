@@ -29,7 +29,7 @@ public class ManufacturerServiceImpl implements ManufacturerService {
 
     @Override
     public Optional<Manufacturer> findById(Long id) {
-        return Optional.empty();
+        return this.repository.findById(id);
     }
 
     @Override
@@ -39,7 +39,8 @@ public class ManufacturerServiceImpl implements ManufacturerService {
 
     @Override
     public Manufacturer save(Manufacturer manufacturer) {
-        return null;
+        this.repository.save(manufacturer);
+        return manufacturer;
     }
 
     @Override
@@ -50,5 +51,10 @@ public class ManufacturerServiceImpl implements ManufacturerService {
     @Override
     public void deleteAll() {
 
+    }
+
+    @Override
+    public List<Manufacturer> findAllByYear(Integer year) {
+        return null;
     }
 }
