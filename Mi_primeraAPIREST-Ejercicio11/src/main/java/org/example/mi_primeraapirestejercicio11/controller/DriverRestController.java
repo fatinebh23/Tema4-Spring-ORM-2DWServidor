@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping ("/api")
+//http://localhost:8080/api
 public class DriverRestController {
     private final DriverService driverService;
     @Autowired
