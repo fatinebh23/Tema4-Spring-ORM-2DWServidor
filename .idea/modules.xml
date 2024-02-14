@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Mi_primeraAPIREST-Ejercicio11/Mi_primeraAPIREST-Ejercicio11.iml" filepath="$PROJECT_DIR$/Mi_primeraAPIREST-Ejercicio11/Mi_primeraAPIREST-Ejercicio11.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tema4-2DWServidor.iml" filepath="$PROJECT_DIR$/.idea/Tema4-2DWServidor.iml" />
     </modules>
   </component>
