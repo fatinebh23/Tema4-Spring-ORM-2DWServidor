@@ -5,7 +5,11 @@
     <title th:text="${titulo}"></title>
 </head>
 <body>
+
 <span th:text="${usuario.nombre}"> </span>
 <span th:text="${usuario.apellido}"> </span>
+<br>
+<span th:if="${usuario.email}" th:text="${usuario.email}"></span>
+<span th:if="${usuario.email==null}">El usuario no tiene email</span>
 </body>
 </html>
