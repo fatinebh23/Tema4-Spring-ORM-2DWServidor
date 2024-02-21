@@ -13,9 +13,14 @@
             padding: 5em;
         }
     </style>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 <body>
-<h1 th:text="${titulo}"></h1>
+<h1 class="color-rojo" th:text="${titulo}"></h1>
+<h1 class="color-azul"> Decorando los estilos css</h1>
+<img th:src="@{/images/Spring-Logo.png}">
 <p>Esta página ha sido servida a las <span th:text="${#temporals.format(hora, 'HH:mm')}"></span></p>
+
+
 </body>
 </html>
