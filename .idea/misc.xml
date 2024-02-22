@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/Ej12_Metodos_HTTP_API-REST/pom.xml" />
+        <option value="$PROJECT_DIR$/Ej13_Relaciones_OneToOne_OneToMany/pom.xml" />
       </list>
     </option>
   </component>
