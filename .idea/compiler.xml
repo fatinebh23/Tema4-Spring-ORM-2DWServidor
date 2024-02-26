@@ -6,17 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Ej12_Metodos_HTTP_API-REST (1)" />
+        <module name="demo" />
         <module name="Ej12_Metodos_HTTP_API-REST" />
         <module name="Ej13_Relaciones_OneToOne_OneToMany" />
-        <module name="demo" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Ej12_Metodos_HTTP_API-REST" options="-parameters" />
-      <module name="Ej12_Metodos_HTTP_API-REST (1)" options="-parameters" />
       <module name="Ej13_Relaciones_OneToOne_OneToMany" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>

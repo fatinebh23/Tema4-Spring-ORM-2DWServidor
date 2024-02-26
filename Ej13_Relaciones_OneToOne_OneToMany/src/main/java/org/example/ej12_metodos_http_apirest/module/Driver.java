@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Data
@@ -25,5 +27,12 @@ public class Driver {
     private LocalDate dob;
     private String nationality;
     private String url;
-
+    @ManyToMany
+    @JoinTable(name = "driver_races",
+            joinColumns = @JoinColumn(name = "driverid", referencedColumnName = "driverid"),
+            inverseJoinColumns = @JoinColumn(name = "racesid", referencedColumnName = "racesid"))
+    private List<Race> races =  new ArrayList<Race>();
+    @ManyToOne
+    @JoinColumn(name = "constructorid", foreignKey = @ForeignKey(name = "fk_driver_constructor"))
+    private Constructor constructor;
 }

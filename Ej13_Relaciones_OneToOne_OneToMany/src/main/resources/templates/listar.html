@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Drivers</h1>
+<table border="2px">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Code</th>
+        <th>Forename</th>
+        <th>Surname</th>
+        <th>DOB</th>
+        <th>Nationality</th>
+        <th>Constructor</th>
+        <th>URL</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="d: ${drivers}">
+        <td th:text="${d.getId()}"></td>
+        <td th:text="${d.getCode()}"></td>
+        <td th:text="${d.getForename()}"></td>
+        <td th:text="${d.getSurname()}"></td>
+        <td th:text="${d.getDob()}"></td>
+        <td th:text="${d.getNationality()}"></td>
+        <td th:text="${d.getConstructorid()}"></td>
+        <td th:text="${d.getUrl()}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

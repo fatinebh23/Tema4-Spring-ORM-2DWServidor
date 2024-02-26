@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,16 +24,14 @@ public class Race {
     private Integer year;
     private Integer round;
 
-    // tipo de relación
-    // un empleado tiene una dirección
-    // one-to-one
-    @OneToOne
-    @JoinColumn(name = "circuitid", foreignKey = @ForeignKey(name = "fk_race_circuit"))
-    private Circuit circuit;
-
-    // private Integer circuitid;
     private String name;
     private LocalDate date;
     private LocalDateTime time;
     private String url;
+
+    @OneToOne
+    @JoinColumn(name = "cricuitid", foreignKey = @ForeignKey(name = "fk_races_circuits"))
+    private Circuit circuit;
+    @ManyToMany(mappedBy = "races")
+    private List<Driver> drivers = new ArrayList<>();
 }

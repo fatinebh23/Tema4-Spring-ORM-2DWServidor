@@ -6,9 +6,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Ej12MetodosHttpApiRestApplication {
+public class App13 {
     public static void main(String[] args) {
-        SpringApplication.run(Ej12MetodosHttpApiRestApplication.class, args);
+        SpringApplication.run(App13.class, args);
     }
 
 }

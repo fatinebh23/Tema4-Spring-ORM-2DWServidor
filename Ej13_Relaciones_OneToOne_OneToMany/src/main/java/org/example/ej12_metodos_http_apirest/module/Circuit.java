@@ -1,6 +1,7 @@
 package org.example.ej12_metodos_http_apirest.module;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,5 +27,7 @@ public class Circuit {
     private Double lng;
     private Integer alt;
     private String url;
-
+    @OneToOne(mappedBy = "circuit", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JsonIgnoreProperties("circuit")
+    private Race races;
 }

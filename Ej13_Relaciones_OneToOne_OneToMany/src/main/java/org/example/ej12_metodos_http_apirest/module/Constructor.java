@@ -26,12 +26,7 @@ public class Constructor {
     private String nationality;
     private String url;
 
-
-    // el owner es driver
-    // tiene que coincidir entre comillas con el nombre del atributo Constructor en la clase Driver
-    @OneToMany(mappedBy = "constructor")
-    private List<Driver> drivers = new ArrayList<>();
-    // en vez de listas se puede utilizar sets ¿?
-
+    @OneToMany(mappedBy = "constructor", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private List<Driver> drivers =  new ArrayList<>();
 
 }
