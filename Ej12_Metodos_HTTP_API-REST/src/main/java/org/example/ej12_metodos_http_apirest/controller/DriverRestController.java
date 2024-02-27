@@ -57,7 +57,7 @@ public class DriverRestController {
 
 
     }
-
+//DELETE
     @DeleteMapping("/drivers/{code}")
     public ResponseEntity<Driver> deleteByCode(@PathVariable String code){
 
