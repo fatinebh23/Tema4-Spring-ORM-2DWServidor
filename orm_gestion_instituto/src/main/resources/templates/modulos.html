@@ -1,0 +1,32 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Modulos</h1>
+<table border="2px">
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Curso</th>
+        <th>Horas</th>
+        <th>Profesor </th>
+        <th>Alumnos </th>
+        <th>Modulos</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="m: ${modulo}">
+        <td th:text="${m.getnombre()}"></td>
+        <td th:text="${m.getcurso()}"></td>
+        <td th:text="${m.gethoras()}"></td>
+
+
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

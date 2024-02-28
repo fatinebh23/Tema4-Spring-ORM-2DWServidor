@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Alumnos</h1>
+<table border="2px">
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Primer Apellido</th>
+        <th>Segundo Apellido</th>
+        <th>NIA</th>
+        <th>Telefono </th>
+        <th>Modulos</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="a: ${alumnados}">
+        <td th:text="${a.getnombre()}"></td>
+        <td th:text="${a.getprimer_apellido()}"></td>
+        <td th:text="${d.getsegundo_apellido()}"></td>
+        <td th:text="${d.getnia()}"></td>
+        <td th:text="${d.gettelefono()}"></td>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
